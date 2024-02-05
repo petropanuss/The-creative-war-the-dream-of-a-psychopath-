@@ -1,3 +1,8 @@
+the "Extreme demon" icon = '|Значок "Extreme demon"|'
+apples = '|2 яблока|'
+strong flashlight withh GER marking = '|Мощный фонарик с маркировкой "GER"|'
+a jackknife = '|Складной нож|'
+gold coins = '|3 золотые монеты|'
 Thend1 = '|Не открыта|'
 Thend2 = '|Не открыта|'
 Thend3 = '|Не открыта|'
@@ -57,7 +62,6 @@ while a != 'Выход':
                                 print('вы шли, шли и шли, вы устали ')
                                 print('В вашу голову начали проеикать мысли по типу может мне это не нужно, может мне просто остановиться и поспать')
                                 print('Ваше действие:')
-
                                 print('|1)Лечь и спать|')
                                 print('|2)Идти дальше|')
                                 print('|3)Осматреться|')
@@ -81,6 +85,28 @@ while a != 'Выход':
                 elif a == 'В главное меню':
                     b = 'Конец'
                     с = 1
+                elif a == '':
+                    while a != '':
+                        print('У вас имеется:')
+                        print(the "Extreme demon" icon)
+                        print(strong flashlight withh GER marking)
+                        print(a jackknife)
+                        print('|*Использовать*|')
+                        print('|*Выкинуть*|')
+                        print('Около вас:')
+                        print(apples)
+                        print(gold coins)
+                        print('|*Использовать*|')
+                        print('|*Взять*|')
+                        print(' ')
+                        print('|*Назад*|')
+                        a = input()
+                        if a == '':
+                            print('')
+                        elif a == '':
+                            print('')
+                        elif a == '':
+                            print('')
     else:
         if a == 'Концовки и достижения':
             print('Достижения:')
@@ -90,7 +116,7 @@ while a != 'Выход':
             print(Thend3)
             print(Thend4)
             print(Thend5)
-            print(' ')
+            print(' ') 
             print('|Назад|')
             a = input()
             if a == 'Назад' or a == '1':
