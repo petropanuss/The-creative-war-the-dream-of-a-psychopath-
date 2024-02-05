@@ -1,8 +1,8 @@
-the "Extreme demon" icon = '|Значок "Extreme demon"|'
+theicon = '|Значок "Extreme demon"|'
 apples = '|2 яблока|'
-strong flashlight withh GER marking = '|Мощный фонарик с маркировкой "GER"|'
-a jackknife = '|Складной нож|'
-gold coins = '|3 золотые монеты|'
+strongflashlightwithhGERmarking = '|Мощный фонарик с маркировкой "GER"|'
+ajackknife = '|Складной нож|'
+goldcoins = '|3 золотые монеты|'
 Thend1 = '|Не открыта|'
 Thend2 = '|Не открыта|'
 Thend3 = '|Не открыта|'
@@ -15,7 +15,7 @@ while a != 'Выход':
     print('|Концовки и достижения|')
     print('|Выход|')
     a = input()
-    if a == 'Играть':
+    if a == 'Играть' or a == 'играть' or a == '1':
         b = 0
         c = 0
         while b != 'Конец':
@@ -68,6 +68,7 @@ while a != 'Выход':
                                 print('|*Инвентарь*|')
                                 print('|*В главное меню*|')
                 elif a == 'Лечь и спать':
+                    print(' ')
                     print('Вы решили ничего не делать, а просто лечь спать')
                     print('Как говорится утро вечера мудренее, но какое утро, какой вечер')
                     print('Вы ложитесь и засыпаите, но незнаите через сколько минут часов но вы просыпаитесь')
@@ -77,38 +78,50 @@ while a != 'Выход':
                        print('получена новая концовка')
                        print('Концовка№1 "Сон или нет"')
                        Thend1 = '|(Сон или нет?)|'
+                       print(' ')
                        b = 'Конец'
                     else:
+                        print(' ')
                         print('Данная концовка уже получена')
                         print('Концовка№1 Сон или нет?""')
+                        print(' ')
                         b = 'Конец'
                 elif a == 'В главное меню':
                     b = 'Конец'
                     с = 1
-                elif a == '':
+                elif a == 'Инвентарь':
                     while a != '':
+                        print(' ')
                         print('У вас имеется:')
-                        print(the "Extreme demon" icon)
-                        print(strong flashlight withh GER marking)
-                        print(a jackknife)
+                        print(theicon)
+                        print(strongflashlightwithhGERmarking)
+                        print(ajackknife)
                         print('|*Использовать*|')
                         print('|*Выкинуть*|')
+                        print(' ')
                         print('Около вас:')
                         print(apples)
-                        print(gold coins)
+                        print(goldcoins)
                         print('|*Использовать*|')
                         print('|*Взять*|')
                         print(' ')
                         print('|*Назад*|')
                         a = input()
-                        if a == '':
+                        if a == 'Использовать' or a == 'использовать':
+                            print(' ')
+                            print(theicon)
+                            print(strongflashlightwithhGERmarking)
+                            print(ajackknife)
+                            print(apples)
+                            print(goldcoins)
+                            print(' ')
+                            print('|*Назад*|')
+                        elif a == 'Выкинуть' or a == 'выкинуть':
                             print('')
-                        elif a == '':
-                            print('')
-                        elif a == '':
+                        elif a == 'Взять' or a == 'взять':
                             print('')
     else:
-        if a == 'Концовки и достижения':
+        if a == 'Концовки и достижения' or a == 'концовки и достижения' or a == '2':
             print('Достижения:')
             print('Концовки:')
             print(Thend1)
@@ -121,3 +134,4 @@ while a != 'Выход':
             a = input()
             if a == 'Назад' or a == '1':
                 continue
+
