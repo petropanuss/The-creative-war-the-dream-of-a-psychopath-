@@ -1,18 +1,3 @@
-theicon = '|Значок "Extreme demon"|'
-theicon1 = 0
-theicon2 = 2
-apples = '|2 яблока|'
-apples1 = 1
-apples2 = 2
-strongflashlightwithhGERmarking = '|Мощный фонарик с маркировкой "GER"|'
-strongflashlightwithhGERmarking1 = 0
-strongflashlightwithhGERmarking2 = 2
-ajackknife = '|Складной нож|'
-ajackknife1 = 0
-ajackknife = 2
-goldcoins = '|3 золотые монеты|'
-goldcoins1 = 1
-goldcoins2 = 2
 Thend1 = '|Не открыта|'
 Thend2 = '|Не открыта|'
 Thend3 = '|Не открыта|'
@@ -28,6 +13,21 @@ while a != 'Выход':
     if a == 'Играть' or a == 'играть' or a == '1':
         b = 0
         c = 0
+        theicon = '|Значок "Extreme demon"|'
+        theicon1 = 0
+        theicon2 = 2
+        apples = '|2 яблока|'
+        apples1 = 1
+        apples2 = 2
+        strongflashlightwithhGERmarking = '|Мощный фонарик с маркировкой "GER"|'
+        strongflashlightwithhGERmarking1 = 0
+        strongflashlightwithhGERmarking2 = 2
+        ajackknife = '|Складной нож|'
+        ajackknife1 = 0
+        ajackknife2 = 2
+        goldcoins = '|3 золотые монеты|'
+        goldcoins1 = 1
+        goldcoins2 = 2
         while b != 'Конец':
             while c != 1:
                 print('Вы просыпаитесь не понимая где вы находитесь')
@@ -103,52 +103,25 @@ while a != 'Выход':
                     while a != '':
                         print(' ')
                         print('У вас имеется:')
-                        if theicon1 == 0:
-                            print(theicon)
-                        if strongflashlightwithhGERmarking1 == 0:
-                            print(strongflashlightwithhGERmarking)
-                        if ajackknife1 == 0:
-                            print(ajackknife)
+                        print(theicon)
+                        print(strongflashlightwithhGERmarking)
+                        print(ajackknife)
                         print('|*Использовать*|')
                         print('|*Выкинуть*|')
                         print(' ')
                         print('Около вас:')
-                        if apples1 == 1:
-                            print(apples)
-                        if goldcoins1 == 1:
-                            print(goldcoins)
+                        print(apples)
+                        print(goldcoins)
                         print('|*Использовать*|')
                         print('|*Взять*|')
                         print(' ')
                         print('|*Назад*|')
                         a = input()
-                        if a == 'Использовать' or a == 'использовать':
-                            print(' ')
-                            if theicon2 == 2:
-                                print(theicon)
-                            if strongflashlightwithhGERmarking2 == 2:
-                                print(strongflashlightwithhGERmarking)
-                            if ajackknife2 == 2:
-                                print(ajackknife)
-                            if apples2 == 2:
-                                print(apples)
-                            if goldcoins2 == 2:
-                                print(goldcoins)
-                            print(' ')
-                            print('|*Назад*|')
-                        elif a == 'Выкинуть' or a == 'выкинуть':
-                            if theicon1 == 0:
-                                print(theicon)
-                            if strongflashlightwithhGERmarking1 == 0:
-                                print(strongflashlightwithhGERmarking)
-                            if ajackknife1 == 0:
-                                print(ajackknife)
-                            if apples1 == 0:
-                                print(apples)
-                            if goldcoins1 == 0:
-                                print(apples)
-                        elif a == 'Взять' or a == 'взять':
-                            print('Выьерите из списка:')
+                        if a == '':
+                            print('')
+                        elif a == '':
+                            print('')
+                        elif a == '':
                             print('')
     else:
         if a == 'Концовки и достижения' or a == 'концовки и достижения' or a == '2':
